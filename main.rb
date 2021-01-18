@@ -14,23 +14,23 @@ DISCOUNT_PEOPLE_NUM = 5   #割引適用人数
 
 while true
   print "プランの番号を選択 > "
-  selected_num = gets.to_i
-  break if selected_num >= 1 && selected_num <= 3
+  selected_plan_num = gets.to_i
+  break if selected_plan_num >= 1 && selected_plan_num <= 3
   puts "1〜3の番号を入力して下さい。"
 end
 
-if selected_num == 1
-  selected_plan = "沖縄旅行" 
+if selected_plan_num == 1
+  selected_place = "沖縄旅行"
   plan_price = 10000
-elsif selected_num == 2
-  selected_plan = "北海道旅行"
+elsif selected_plan_num == 2
+  selected_place = "北海道旅行"
   plan_price = 20000
-elsif selected_num == 3
-  selected_plan = "九州旅行"
+elsif selected_plan_num == 3
+  selected_place = "九州旅行"
   plan_price = 15000
 end
 
-puts "#{selected_plan}ですね。"
+puts "#{selected_place}ですね。"
 
 while true
   puts "何名で予約されますか？"
