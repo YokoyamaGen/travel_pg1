@@ -19,18 +19,19 @@ while true
   puts "1〜3の番号を入力して下さい。"
 end
 
-if selected_plan_num == 1
-  selected_place = "沖縄旅行"
+case selected_plan_num
+when 1
+  plan_place = "沖縄旅行"
   plan_price = 10000
-elsif selected_plan_num == 2
-  selected_place = "北海道旅行"
+when 2
+  plan_place = "北海道旅行"
   plan_price = 20000
-elsif selected_plan_num == 3
-  selected_place = "九州旅行"
+when 3
+  plan_place = "九州旅行"
   plan_price = 15000
 end
 
-puts "#{selected_place}ですね。"
+puts "#{plan_place}ですね。"
 
 while true
   puts "何名で予約されますか？"
